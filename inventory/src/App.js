@@ -1,9 +1,12 @@
 import "./App.css";
+import Info from "./info";
+import AddItem from "./addItem";
 
 function App() {
   return (
     <div className="App">
-      <p>Bare Bones App !!!!</p>
+      <Info />
+      <AddItem />
     </div>
   );
 }
