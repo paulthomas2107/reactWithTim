@@ -11,6 +11,15 @@ function App() {
   );
 }
 
+function Data(props) {
+  return (
+    <div>
+      <p>Title: {props.title}</p>
+      <p>Counter: {props.count}</p>
+    </div>
+  );
+}
+
 function ButtonState() {
   const [title, setTitle] = useState("");
   const [count, setCount] = useState(0);
@@ -20,10 +29,10 @@ function ButtonState() {
   const updateCounterClicked = () => {
     setCount(count + 1);
   };
+
   return (
     <div>
-      <p>Title: {title}</p>
-      <p>Counter: {count}</p>
+      <Data title={title} count={count} />
       <button onClick={updateTitleClicked}>Update Title</button>
       <button onClick={updateCounterClicked}>Update Counter</button>
     </div>
