@@ -7,35 +7,40 @@ function SearchBar(props) {
   const [brand, setBrand] = useState("");
 
   const searchButtonPressed = () => {
-    props.callback({ name: name, price: price, type: type, brand: brand });
+    props.updateSearchParams({
+      name: name,
+      price: price,
+      type: type,
+      brand: brand,
+    });
   };
 
   return (
     <div>
       <h2>Search for an item</h2>
       <form>
-        <label for="name-field">Name:</label>
+        <label htmlFor="name-field">Name:</label>
         <input
           id="name-field"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <label for="price-field">Max Price:</label>
+        <label htmlFor="price-field">Max Price:</label>
         <input
           id="price-field"
           type="number"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
-        <label for="type-field">Type:</label>
+        <label htmlFor="type-field">Type:</label>
         <input
           id="type-field"
           type="text"
           value={type}
           onChange={(e) => setType(e.target.value)}
         />
-        <label for="brand-field">Brand:</label>
+        <label htmlFor="brand-field">Brand:</label>
         <input
           id="brand-field"
           type="text"
