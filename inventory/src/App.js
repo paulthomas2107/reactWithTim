@@ -17,11 +17,10 @@ function App() {
     item.id = items.length;
     items.push(item);
     setData({ items: items });
-    console.log(data);
   };
 
   return (
-    <div className="App">
+    <div className="container">
       <SearchBar updateSearchParams={updateFilters} />
       <ItemsDisplay items={data["items"]} />
       <AddItem addItem={addItemToData} />

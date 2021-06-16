@@ -17,7 +17,7 @@ function SearchBar(props) {
 
   return (
     <div>
-      <h2>Search for an item</h2>
+      <h2 >Search for an item</h2>
       <form>
         <label htmlFor="name-field">Name:</label>
         <input
