@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "Paul",
+      "price": "217.66",
+      "type": "Car",
+      "brand": "Ford",
+      "id": 1
+    },
+    {
+      "name": "Paul2",
+      "price": "123.45",
+      "type": "Dog",
+      "brand": "Digby",
+      "id": 2
+    },
+    {
+      "name": "PA1",
+      "price": "1.23",
+      "type": "Paul2",
+      "brand": "dksjhskjd",
+      "id": 3
+    }
+  ]
+}
