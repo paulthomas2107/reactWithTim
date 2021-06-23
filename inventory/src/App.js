@@ -3,10 +3,12 @@ import SearchBar from "./SearchBar";
 import { useState } from "react";
 import AddItem from "./AddItem";
 import ItemsDisplay from "./ItemsDisplay";
+import Test from "./Class";
 
 function App() {
   const [filters, setFilters] = useState({});
   const [data, setData] = useState({ items: [] });
+  const [showTest, setShowTest] = useState(true);
 
   const updateFilters = (searchParams) => {
     setFilters(searchParams);
@@ -69,6 +71,7 @@ function App() {
       <div className="row mt-3">
         <AddItem addItem={addItemToData} />
       </div>
+      {showTest ? <Test destroy={setShowTest} /> : null}
     </div>
   );
 }
